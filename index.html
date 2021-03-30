@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Mitch</title>
-</head>
-<body>
-    <header>
-        <h1>Mitch Mendoza</h1>
-        <nav class="nav-main">
-            <ul>
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>skills</li>
-                <li>contact</li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Mitch</title>
+    </head>
 
-    <main>
-        <img src="images/responsive-layout-profile.png" alt="Profile Pictures of Mitch">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use.</p>
-        
-        <section class="Portfolio">
-            <h2>Portfolio</h2>
-            <article>
-                <img src="images/portfolio-1.png" alt="example of marketing page">
-                <h3>Marketing Page</h3>
-                <p>This project shows the front page of a marketing website meant for specific business I'm interested in</p>
-            </article>
-            <article>
-                <img src="images/portfolio-2.png" alt="example of search page">
-                <h3>Search Page</h3>
-                <p>This project searched through a specific database to find information that the user is trying to look up.</p>
-            </article>
-            <article>
-                <img src="images/portfolio-3.png" alt="example of travel appp">
-                <h3>Travel App</h3>
-                <p>This project compares travel times based on different transportation methods and tells you the best one</p>
-            </article>
-            <article>
-                <img src="images/portfolio-4.png" alt="non desript map">
-                <h3>Map of Favorite Spots</h3>
-                <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-            </article>
-            <article>
-                <img src="images/portfolio-5.png" alt="photo gallery grid template">
-                <h3>Photo Gallery</h3>
-                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-            </article>
-            <article>
-                <img src="images/portfolio-6.png" alt="calculator app entry fields">
-                <h3>Calculator</h3>
-                <p>Someone can enter in number they want, and press the big blue button and get the result.</p>
-            </article>
-        </section>
+    <body>
+        <header>
+            <h1>Mitch Mendoza</h1>
+            <nav class="nav-main">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li>Skills</li> <!--Add new section for exceeds expectations-->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <Section class="contact">
-            <h2>Contact</h2>
-            <p>If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <ul>
-                <li>Phone +1 (111) 555-1234</li>
-                <li>Email email@yoursite.com</li>
-            </ul>
-        </Section>
-    </main>
+        <main>
+            <section class="profile">
+                <img id="profile-pic" src="images/responsive-layout-profile.png" alt="Profile Pictures of Mitch">
+                <p id="profile-para">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use.</p>
+            </section>
+            <section class="portfolio">
+                <h2 id="port-head">Portfolio</h2>
 
-    <footer>
-        <h3>Mitch Mendoza</h3>
-        <a href="#">Back to Top</a>
-    </footer>
-</body>
+                <article>
+                    <img src="images/portfolio-1.png" alt="example of marketing page">
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for specific business I'm interested in</p>
+                </article>
+
+                <article>
+                    <img src="images/portfolio-2.png" alt="example of search page">
+                    <h3>Search Page</h3>
+                    <p>This project searched through a specific database to find information that the user is trying to look up.</p>
+                </article>
+
+                <article>
+                    <img src="images/portfolio-3.png" alt="example of travel appp">
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one</p>
+                </article>
+
+                <article>
+                    <img src="images/portfolio-4.png" alt="non desript map">
+                    <h3>Map of Favorite Spots</h3>
+                    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                </article>
+
+                <article>
+                    <img src="images/portfolio-5.png" alt="photo gallery grid template">
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                </article>
+
+                <article>
+                    <img src="images/portfolio-6.png" alt="calculator app entry fields">
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in number they want, and press the big blue button and get the result.</p>
+                </article>
+
+            </section>
+
+                <!--add skills setion for exceeds expectations-->
+
+            <Section class="contact">
+                <h2 id="contact-head">Contact</h2>
+                <p>If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                
+                <p>Phone <b>+1 (111) 555-1234</b><p>
+                <p>Email email@yoursite.com<p>
+            </Section>
+        </main>
+
+        <footer>
+            <h3>Mitch Mendoza</h3>
+            <a href="#top">Back to Top</a>
+        </footer>
+    </body>
 </html>
